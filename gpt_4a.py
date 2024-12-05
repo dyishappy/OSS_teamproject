@@ -45,11 +45,13 @@ def get_recipe(ingredients, chef_level, cuisine_type):
     # 응답 추출
     return response['choices'][0]['message']['content']
 
-# 입력 예시
-ingredients = ["양파", "달걀", "간장", "고춧가루"]
-chef_level = "초급자"
-cuisine_type = "한식"
+if __name__ == "__main__":
+    # 입력 예시임. 본 코드에선 입력값 사용
+    ingredients = ["양파", "달걀", "간장", "고춧가루"]
+    chef_level = "초급자"
+    cuisine_type = "한식"
 
-# 레시피 생성
-recipe = get_recipe(ingredients, chef_level, cuisine_type)
-print(recipe)
+    # 레시피 생성
+    recipe = get_recipe(ingredients, chef_level, cuisine_type)
+
+    print(recipe) # 확인용임. 본 코드에선 반환값 사용
