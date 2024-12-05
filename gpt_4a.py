@@ -1,7 +1,7 @@
 import openai
 
 # OpenAI API 키 설정
-openai.api_key = "your_api_key_here"  # 여기에 자신의 OpenAI API 키를 입력하세요.
+openai.api_key = ""  # 여기에 자신의 OpenAI API 키를 입력하세요.
 
 def get_recipe(ingredients, chef_level, cuisine_type):
     # 입력 검증
@@ -10,9 +10,12 @@ def get_recipe(ingredients, chef_level, cuisine_type):
     if not cuisine_type:
         return "요리 분야를 입력해주세요!"
     
+    # 문자열로 받은 ingredients를 리스트로 변환
+    ingredients = ingredients.split(", ")
+
     # 시스템 프롬프트 설정
     system_prompt = (
-        "너는 요리 전문가야. "
+        "너는 요리 전문가야."
         "다음과 같은 형식으로 1번부터 4번까지 응답 출력해줘:\n"
         "1. 재료\n"
         "2. 조리 방법\n"
@@ -26,7 +29,7 @@ def get_recipe(ingredients, chef_level, cuisine_type):
     
     # 유저 프롬프트 생성
     user_prompt = (
-        f"내가 냉장고에 {', '.join(ingredients)}이 있는데 "
+        f"내 냉장고에 {', '.join(ingredients)}이(가) 있어. "
         f"이걸로 {chef_level} 수준의 {cuisine_type} 레시피 추천해줘."
     )
     
