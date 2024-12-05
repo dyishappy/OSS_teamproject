@@ -15,7 +15,7 @@ def generate_recipe(ingredients, cuisine_type, chef_level):
     if not ingredients or '없음' in ingredients:
         ingredients_text = "재료에 상관없이"
     else:
-        ingredients_text = f"{', '.join(ingredients)}로"
+        ingredients_text = f"{ingredients}로"
 
     # 시스템 프롬프트 동적 생성
     system_prompt = (
@@ -60,19 +60,22 @@ def generate_recipe(ingredients, cuisine_type, chef_level):
     
     # 불필요한 텍스트 제거 및 형식 유지
     response = response.replace(system_prompt.strip(), "").strip()
+
+    # 응답 전처리: 'Assistant:' 이후 텍스트만 남기기
+    if "Assistant:" in response:
+        response = response.split("Assistant:", 1)[1].strip()
+
     return response
 
 if __name__ == "__main__":
     # 입력 예시임. 본 코드에선 입력값 사용
-    ingredients = ["양송이 버섯", "된장", "고추장", "마늘", "새우"]
+    ingredients = "양송이 버섯, 된장, 고추장, 마늘, 새우"
     cuisine_type = "양식"
     chef_level = "초보자"
 
     # 레시피 생성
     recipe = generate_recipe(ingredients, cuisine_type, chef_level)
 
-    # 응답 전처리: 'Assistant:' 이후 텍스트만 남기기
-    if "Assistant:" in recipe:
-        recipe = recipe.split("Assistant:", 1)[1].strip()
+
 
     print(recipe) # 예시 출력임. 본 코드에선 반환값 사용
