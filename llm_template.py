@@ -64,16 +64,18 @@ def generate_recipe(ingredients, cuisine_type, chef_level):
     response = response.replace(system_prompt.strip(), "").strip()
     return response
 
-# 입력 예시
-ingredients = ["양송이 버섯", "된장", "고추장", "마늘", "새우"]
-cuisine_type = "양식"
-chef_level = "초보자"
+if __name__ == "__main__":
 
-# 레시피 생성
-recipe = generate_recipe(ingredients, cuisine_type, chef_level)
+    # 입력 예시임. 본 코드에선 입력값 받아서 사용
+    ingredients = ["양송이 버섯", "된장", "고추장", "마늘", "새우"]
+    cuisine_type = "양식"
+    chef_level = "초보자"
 
-# 응답 전처리: 'Assistant:' 이후 텍스트만 남기기
-if "Assistant:" in recipe:
-    recipe = recipe.split("Assistant:", 1)[1].strip()
+    # 레시피 생성
+    recipe = generate_recipe(ingredients, cuisine_type, chef_level)
 
-print(recipe)
+    # 응답 전처리: 'Assistant:' 이후 텍스트만 남기기
+    if "Assistant:" in recipe:
+        recipe = recipe.split("Assistant:", 1)[1].strip()
+
+    print(recipe) # 확인용임. 본 코드에선 recipe 반완 값 받아서 사용
