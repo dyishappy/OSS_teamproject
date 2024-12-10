@@ -3,12 +3,12 @@ from vicuna_2a import generate_recipe
 from gpt_4a import get_recipe
 
 def choose_model(function_name, ingredients, cuisine_type, chef_level):
-    if function_name == "vicuna":
+    if function_name == "무료버전":
         return generate_recipe(ingredients, cuisine_type, chef_level)
-    elif function_name == "chatgpt":
+    elif function_name == "유료버전":
         return get_recipe(ingredients, cuisine_type, chef_level)
     else:
-        return "올바른 함수명을 입력하세요. ('vicuna' 또는 'chatgpt')"
+        return "버전을 선택해주세요."
 
 # Gradio 인터페이스 구성
 iface = gr.Interface(
