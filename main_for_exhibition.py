@@ -11,7 +11,8 @@ iface = gr.Interface(
     ],
     outputs=gr.Textbox(label="추천 레시피"),
     title="Take care of the fridge!",
-    description="입력한 요리 재료, 요리 종류, 조리자 수준에 따라 맞춤 레시피를 추천합니다."
+    description="""입력한 요리 재료, 요리 종류, 조리자 수준에 따라 맞춤 레시피를 추천합니다.
+    *응답이 제대로 생성되지 않을 경우 Submit을 다시 눌러주세요!"""
 )
 
 iface.launch(share=True)
