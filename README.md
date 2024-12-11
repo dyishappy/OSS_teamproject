@@ -12,7 +12,8 @@
 - <a href="#vicuna-gpt-api">Vicuna/GPT API 가져온 코드 설명</a>
 - <a href="#functions">Vicuna/GPT API 사용하여 작성한 함수 설명</a>
 - <a href="#gradio">Gradio 설명</a>
-- <a href="#execution">실행 (Local/Public 서버) + 실행 예시</a>
+- <a href="#execution">실행 (Local/Public 서버)</a>
+- <a href="#execution-examples">실행 예시</a>
 - <a href="#license">License</a>
 
 ---
@@ -110,7 +111,7 @@ iface = gr.Interface(
 
 ---
 
-<h2 id="execution">🚀 실행 (Local/Public 서버) + 실행 예시</h2>
+<h2 id="execution">🚀 실행 (Local/Public 서버)</h2>
 
 ### 1️⃣ Local 서버
 
@@ -132,6 +133,15 @@ iface.launch(share=True)
 
 ---
 
+<h2 id="execution-examples">📸 실행 예시</h2>
+
+### 1️⃣ Vicuna (무료버전) 결과 예시
+![Vicuna 예시](images/vicuna_example.png)
+
+### 2️⃣ ChatGPT (유료버전) 결과 예시
+![ChatGPT 예시](images/chatgpt_example.png)
+
+---
 <h2 id="license">📜 License</h2>
 
 [MIT License](LICENSE)
