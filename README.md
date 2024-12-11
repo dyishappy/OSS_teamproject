@@ -24,8 +24,12 @@ pip install transformers gradio openai torch
 ```
 
 - **Transformers**: `transformers` 라이브러리는 Vicuna 모델 사용에 필요합니다.
+    Version: `4.46.2`
 - **Gradio**: 간편한 웹 인터페이스 구축을 위해 사용합니다.
+    Version: `4.44.1`
 - **OpenAI**: ChatGPT API 연동에 필요합니다.
+    Version: `0.28.0`
+
 
 ---
 
