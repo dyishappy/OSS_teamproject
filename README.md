@@ -8,16 +8,16 @@
 
 ## 📚 목차
 
-- [필요한 패키지 모듈 설치/버전](#📦-필요한-패키지-모듈-설치버전)
-- [Vicuna/GPT API 가져온 코드 설명](#🧠-vicunagpt-api-가져온-코드-설명)
-- [Vicuna/GPT API 사용해서 작성한 함수 설명](#🛠-vicunagpt-api-사용해서-작성한-함수-설명)
-- [Gradio 설명](#🌐-gradio-설명)
-- [실행 (Public 서버/Local 서버) + 실행 예시](#🚀-실행-public-서버local-서버--실행-예시)
-- [License](#📜-license)
+- <a href="#required-packages">필요한 패키지 모듈 설치/버전</a>
+- <a href="#vicuna-gpt-api">Vicuna/GPT API 가져온 코드 설명</a>
+- <a href="#functions">Vicuna/GPT API 사용해서 작성한 함수 설명</a>
+- <a href="#gradio">Gradio 설명</a>
+- <a href="#execution">실행 (Public 서버/Local 서버) + 실행 예시</a>
+- <a href="#license">License</a>
 
 ---
 
-## 📦 필요한 패키지 모듈 설치/버전
+<h2 id="required-packages">📦 필요한 패키지 모듈 설치/버전</h2>
 
 ```bash
 pip install transformers gradio openai torch
@@ -29,7 +29,7 @@ pip install transformers gradio openai torch
 
 ---
 
-## 🧠 Vicuna/GPT API 가져온 코드 설명
+<h2 id="vicuna-gpt-api">🧠 Vicuna/GPT API 가져온 코드 설명</h2>
 
 ### 1️⃣ Vicuna 모델
 
@@ -62,7 +62,7 @@ openai.api_key = ""  # 자신의 OpenAI API 키를 입력하세요.
 
 ---
 
-## 🛠 Vicuna/GPT API 사용해서 작성한 함수 설명
+<h2 id="functions">🛠 Vicuna/GPT API 사용해서 작성한 함수 설명</h2>
 
 ### 1️⃣ `Vicuna_2a.py`에서 작성한 `def generate_recipe(ingredients, cuisine_type, chef_level)` 함수 설명
 
@@ -75,7 +75,7 @@ openai.api_key = ""  # 자신의 OpenAI API 키를 입력하세요.
 
 ---
 
-## 🌐 Gradio 설명
+<h2 id="gradio">🌐 Gradio 설명</h2>
 
 **Gradio**는 머신러닝 모델 및 API를 간편하게 웹 환경으로 배포할 수 있는 Python 패키지입니다.
 
@@ -106,7 +106,7 @@ iface = gr.Interface(
 
 ---
 
-## 🚀 실행 (Local/Public 서버) + 실행 예시
+<h2 id="execution">🚀 실행 (Local/Public 서버) + 실행 예시</h2>
 
 ### 1️⃣ Local 서버
 
@@ -128,7 +128,7 @@ iface.launch(share=True)
 
 ---
 
-## 📜 License
+<h2 id="license">📜 License</h2>
 
 [MIT License](LICENSE)
 
