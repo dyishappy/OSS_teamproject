@@ -8,16 +8,16 @@
 
 ## 📚 목차
 
-- <a href="#required-packages">필요한 패키지 모듈 설치/버전</a>
+- <a href="#required-packages">필요한 패키지 모듈 설치 및 버전</a>
 - <a href="#vicuna-gpt-api">Vicuna/GPT API 가져온 코드 설명</a>
-- <a href="#functions">Vicuna/GPT API 사용해서 작성한 함수 설명</a>
+- <a href="#functions">Vicuna/GPT API 사용하여 작성한 함수 설명</a>
 - <a href="#gradio">Gradio 설명</a>
-- <a href="#execution">실행 (Public 서버/Local 서버) + 실행 예시</a>
+- <a href="#execution">실행 (Local/Public 서버) + 실행 예시</a>
 - <a href="#license">License</a>
 
 ---
 
-<h2 id="required-packages">📦 필요한 패키지 모듈 설치/버전</h2>
+<h2 id="required-packages">📦 필요한 패키지 모듈 설치 및 버전</h2>
 
 ```bash
 pip install transformers gradio openai torch
@@ -62,7 +62,7 @@ openai.api_key = ""  # 자신의 OpenAI API 키를 입력하세요.
 
 ---
 
-<h2 id="functions">🛠 Vicuna/GPT API 사용해서 작성한 함수 설명</h2>
+<h2 id="functions">🛠 Vicuna/GPT API 사용하여 작성한 함수 설명</h2>
 
 ### 1️⃣ `Vicuna_2a.py`에서 작성한 `def generate_recipe(ingredients, cuisine_type, chef_level)` 함수 설명
 
