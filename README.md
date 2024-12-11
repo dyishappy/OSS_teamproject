@@ -2,18 +2,18 @@
 
 냉장고에 있는 재료로 요리를 만들고 싶다! 간단한 레시피가 없을까? 🤔
 
-**'냉장고를 부탁해'**는 이러한 고민을 해결해드리기 위해 만들어졌습니다. 수준에 맞는 간단한 레시피를 추천받아보세요! 🍳
+**'냉장고를 부탁해'**는 이러한 고민을 해결해드립니다^3^ 수준에 맞는 간단한 레시피를 추천받아보세요! 🍳
 
 ---
 
 ## 📚 목차
 
-- [필요한 패키지 모듈 설치/버전](#필요한-패키지-모듈-설치버전)
-- [Vicuna/GPT API 가져온 코드 설명](#vicunagpt-api-가져온-코드-설명)
-- [Vicuna/GPT API 사용해서 작성한 함수 설명](#vicunagptgpt-api-사용해서-작성한-함수-설명)
-- [Gradio 설명](#gradio-설명)
-- [실행 (Public 서버/Local 서버) + 실행 예시](#실행-public-서버local-서버--실행-예시)
-- [License](#license)
+- [필요한 패키지 모듈 설치/버전](#📦-필요한-패키지-모듈-설치버전)
+- [Vicuna/GPT API 가져온 코드 설명](#🧠-vicunagpt-api-가져온-코드-설명)
+- [Vicuna/GPT API 사용해서 작성한 함수 설명](#🛠-vicunagpt-api-사용해서-작성한-함수-설명)
+- [Gradio 설명](#🌐-gradio-설명)
+- [실행 (Public 서버/Local 서버) + 실행 예시](#🚀-실행-public-서버local-서버--실행-예시)
+- [License](#📜-license)
 
 ---
 
@@ -106,7 +106,7 @@ iface = gr.Interface(
 
 ---
 
-## 🚀 실행 (Public 서버/Local 서버) + 실행 예시
+## 🚀 실행 (Local/Public 서버) + 실행 예시
 
 ### 1️⃣ Local 서버
 
