@@ -74,7 +74,7 @@ openai.api_key = ""  # 자신의 OpenAI API 키를 입력하세요.
 - **입력**: 재료 목록, 요리 종류, 조리자 수준
 - **출력**: 추천 레시피
 
-### 2️⃣ `Gpt_4a.py`에서 작성한 `def generate_recipe(ingredients, cuisine_type, chef_level)` 함수 설명
+### 2️⃣ `Gpt_4a.py`에서 작성한 `def get_recipe(ingredients, cuisine_type, chef_level)` 함수 설명
 
 - 동일한 입력과 출력 구조를 가지며, ChatGPT API를 활용하여 레시피를 생성합니다.
 
